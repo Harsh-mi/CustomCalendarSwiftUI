@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
   
   s.ios.deployment_target = '15.0'
   
-  s.source_files = 'CustomCalendarSwiftUI/Classes/**/*.swift'
+  s.source_files = 'CustomCalendarSwiftUI/Classes/**/*'
     
   s.swift_version = '5.0'
   
