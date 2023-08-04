@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'CustomCalendarSwiftUI_Example' do
+  pod 'CustomCalendarSwiftUI', :path => '../'
+
+  target 'CustomCalendarSwiftUI_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
