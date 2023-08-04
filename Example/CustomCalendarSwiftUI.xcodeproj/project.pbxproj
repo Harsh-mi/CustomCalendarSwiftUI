@@ -29,7 +29,7 @@
 
 /* Begin PBXFileReference section */
 		388DDAC6B975DE34492D40A7 /* Pods-CustomCalendarSwiftUI_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomCalendarSwiftUI_Tests.release.xcconfig"; path = "Target Support Files/Pods-CustomCalendarSwiftUI_Tests/Pods-CustomCalendarSwiftUI_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		494039A4F61E6576EF50BB20 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		494039A4F61E6576EF50BB20 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* CustomCalendarSwiftUI_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomCalendarSwiftUI_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -44,9 +44,9 @@
 		A9A90F9E159FD57BFB54BEAA /* Pods-CustomCalendarSwiftUI_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomCalendarSwiftUI_Example.debug.xcconfig"; path = "Target Support Files/Pods-CustomCalendarSwiftUI_Example/Pods-CustomCalendarSwiftUI_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C6815A670DD17A42C49ECE9E /* Pods_CustomCalendarSwiftUI_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CustomCalendarSwiftUI_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2418312C83FEC58269478B3 /* Pods-CustomCalendarSwiftUI_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomCalendarSwiftUI_Tests.debug.xcconfig"; path = "Target Support Files/Pods-CustomCalendarSwiftUI_Tests/Pods-CustomCalendarSwiftUI_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		D350B49D3D834D67E5717389 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		D350B49D3D834D67E5717389 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		E400C1920B32A1CE4337EE7F /* Pods_CustomCalendarSwiftUI_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CustomCalendarSwiftUI_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EF4F367E2C23E835ABBF4169 /* CustomCalendarSwiftUI.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = CustomCalendarSwiftUI.podspec; path = ../CustomCalendarSwiftUI.podspec; sourceTree = "<group>"; };
+		EF4F367E2C23E835ABBF4169 /* CustomCalendarSwiftUI.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CustomCalendarSwiftUI.podspec; path = ../CustomCalendarSwiftUI.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,7 +147,6 @@
 				D2418312C83FEC58269478B3 /* Pods-CustomCalendarSwiftUI_Tests.debug.xcconfig */,
 				388DDAC6B975DE34492D40A7 /* Pods-CustomCalendarSwiftUI_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -419,7 +419,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -465,7 +465,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";

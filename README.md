@@ -11,6 +11,8 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
+Deployment target should be iOS 15.0 or later.
+
 ## Installation
 
 CustomCalendarSwiftUI is available through [CocoaPods](https://cocoapods.org). To install
@@ -22,7 +24,7 @@ pod 'CustomCalendarSwiftUI'
 
 ## Author
 
-riddhi-mi, riddhi.patel.mi@gamil.com
+Harsh-mi, harsh.parikh@mindinventory.com
 
 ## License
 
