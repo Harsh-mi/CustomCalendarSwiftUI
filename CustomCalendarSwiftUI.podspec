@@ -27,16 +27,16 @@ Pod::Spec.new do |s|
   s.author           = { 'Harsh-mi' => 'harsh.parikh@mindinventory.com' }
   s.source           = { :git => 'https://github.com/Harsh-mi/CustomCalendarSwiftUI.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-  
+    
   s.source_files = 'Classes/**/*.swift'
   
   s.ios.deployment_target = '15.0'
       
   s.swift_version = '5.0'
   
-  s.platforms = {
-      'ios': '15.0'
-  }
+  s.requires_arc = true
+  
+  s.platform = :ios
   
   # s.resource_bundles = {
   #   'CustomCalendarSwiftUI' => ['CustomCalendarSwiftUI/Assets/*.png']
