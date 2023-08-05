@@ -7,29 +7,29 @@
 
 import SwiftUI
 
-struct DateValue: Identifiable{
+public struct DateValue: Identifiable{
     var id = UUID().uuidString
     var day: Int
     var date: Date
 }
 
-struct CalendarView: View {
+public struct CalendarView: View {
     
-    @Binding var currentDate: Date
-    @State var currentMonth: Int = 0
+    @Binding public var currentDate: Date
+    @State public var currentMonth: Int = 0
     
-    let yearNameColor: Color
-    let monthNameColor: Color
-    let leftArrowColor: Color
-    let rightArrowColor: Color
-    let selectedDateColor: Color
-    let calendarHeight: CGFloat
+    public let yearNameColor: Color
+    public let monthNameColor: Color
+    public let leftArrowColor: Color
+    public let rightArrowColor: Color
+    public let selectedDateColor: Color
+    public let calendarHeight: CGFloat
     
-    let weekDays: [String] = ["S", "M", "T", "W", "T", "F", "S"]
-    let eventIconString: String = "🗓️"
-    let gridColumns = Array(repeating: GridItem(.flexible()), count: 7)
+    public let weekDays: [String] = ["S", "M", "T", "W", "T", "F", "S"]
+    public let eventIconString: String = "🗓️"
+    public let gridColumns = Array(repeating: GridItem(.flexible()), count: 7)
     
-    var body: some View {
+    public var body: some View {
         
         VStack {
             HStack{
