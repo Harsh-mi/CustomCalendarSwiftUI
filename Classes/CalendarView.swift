@@ -6,10 +6,10 @@
 //
 import SwiftUI
 
-public struct DateValue: Identifiable{
-    public var id = UUID().uuidString
-    public var day: Int
-    public var date: Date
+struct DateValue: Identifiable{
+    var id = UUID().uuidString
+    var day: Int
+    var date: Date
 }
 
 public struct CalendarView: View {
