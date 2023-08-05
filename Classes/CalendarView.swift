@@ -1,16 +1,15 @@
 //
 //  CalendarView.swift
-//  CustomCalendarSwiftUI
+//  SwiftUiCustomCalendar
 //
 //  Created by Harsh on 04/08/23.
 //
-
 import SwiftUI
 
 public struct DateValue: Identifiable{
-    var id = UUID().uuidString
-    var day: Int
-    var date: Date
+    public var id = UUID().uuidString
+    public var day: Int
+    public var date: Date
 }
 
 public struct CalendarView: View {
@@ -28,6 +27,17 @@ public struct CalendarView: View {
     public let weekDays: [String] = ["S", "M", "T", "W", "T", "F", "S"]
     public let eventIconString: String = "🗓️"
     public let gridColumns = Array(repeating: GridItem(.flexible()), count: 7)
+    
+    init(startingDate: Binding<Date>, currentMonth: State<Int>, yearNameColor: Color, monthNameColor: Color, leftArrowColor: Color, rightArrowColor: Color, selectedDateColor: Color, calendarHeight: CGFloat) {
+        _currentDate = startingDate
+        _currentMonth = currentMonth
+        self.yearNameColor = yearNameColor
+        self.monthNameColor = monthNameColor
+        self.leftArrowColor = leftArrowColor
+        self.rightArrowColor = rightArrowColor
+        self.selectedDateColor = selectedDateColor
+        self.calendarHeight = calendarHeight
+    }
     
     public var body: some View {
         
@@ -163,7 +173,7 @@ extension CalendarView {
 
 struct CalendarView_Previews: PreviewProvider {
     static var previews: some View {
-        CalendarView(currentDate: .constant(Date()), yearNameColor: Color.black, monthNameColor: Color.black, leftArrowColor: Color.blue, rightArrowColor: Color.blue, selectedDateColor: Color.blue, calendarHeight: 300)
+        CalendarView(startingDate: .constant(Date()), currentMonth: .init(initialValue: 0), yearNameColor: Color.black, monthNameColor: Color.black, leftArrowColor: Color.blue, rightArrowColor: Color.blue, selectedDateColor: Color.blue, calendarHeight: 300)
     }
 }
 
