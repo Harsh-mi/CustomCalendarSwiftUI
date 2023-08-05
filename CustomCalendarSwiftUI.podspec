@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CustomCalendarSwiftUI'
-  s.version          = '0.1.0'
+  s.version          = '1.1.0'
   s.summary          = 'This SwiftUICalendar allows you to use calendar without any dependency of UIKit'
   
   # This description is used to generate tags and improve search results.
